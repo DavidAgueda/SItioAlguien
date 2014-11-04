@@ -9,25 +9,44 @@ and open the template in the editor.
 */
 
 
-html body{
+body,section,artible,footer,aside,nav{
+        border: black 1px solid ;
+}
+html, body{
     margin: 0px;
     padding: 0px;
+}
+section,article,footer,aside,nav{
+        padding: 10px;
+        margin: 5px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 5px;
+    float:left;
+}
+nav p{ 
+    clear: both
 }
 body {
     background-color: #f4f87e;
     margin: auto;
-    width: 90%;
-    
+    width: 90%;    
 }
 aside{
     background-color: #f7fb5d;
-    width: 60%;
+    width: 30%;
+    float: right;
 }
 article{
     background-color: #f7fb5d;
-    width: 90%;
 }
-header nav footer aside{
-  padding: 10px;
-  margin: 10px;
-} 
+section{
+    clear:left;
+    float:left;
+    width:60%;
+}
+footer{
+    clear:left;
+}
